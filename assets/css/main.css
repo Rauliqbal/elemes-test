@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   * {
+      @apply font-sans text-[#333];
+   }
+}
+
+@layer components {
+   .btn {
+      @apply inline-flex items-center px-[18px] py-[10px] text-sm font-medium;
+   }
+   .btn--rounded {
+      @apply rounded-full;
+   }
+   .btn--primary {
+      @apply bg-primary text-white;
+   }
+   .btn--shadow {
+      @apply shadow-[0px_8px_32px_0px_rgba(102,_107,_226,_0.35)];
+   }
+   .btn--secondary {
+      @apply bg-[#F2F2F2];
+   }
+}
+
+#hamburger ~ label span::after,
+#hamburger ~ label span::before {
+   background: #000;
+   transition-delay: 0.2s, 0s;
+   transition-duration: 0.1s;
+   transition-property: margin, transform;
+   content: "";
+   position: absolute;
+   width: 28px;
+   height: 4px;
+}
+#hamburger ~ label span::after {
+   margin-top: 10px;
+}
+#hamburger ~ label span::before {
+   margin-top: -10px;
+}
+#hamburger:checked ~ label span {
+   background-color: transparent;
+}
+#hamburger:checked ~ label span:before,
+#hamburger:checked ~ label span:after {
+   transition-delay: 0s, 0.2s;
+   margin-top: 0;
+}
+#hamburger:checked ~ label span:before {
+   transform: rotate(45deg);
+}
+#hamburger:checked ~ label span:after {
+   transform: rotate(-45deg);
+}
