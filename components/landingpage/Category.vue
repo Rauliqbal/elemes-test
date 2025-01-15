@@ -21,37 +21,31 @@ const categories = [
       name: "cupcake",
       qty: 22,
       icon: "ic_cupcake",
-      background: "#F0FEEB",
    },
    {
       name: "pizza",
       qty: 25,
       icon: "ic_pizza",
-      background: "#E4F2F4",
    },
    {
       name: "kebab",
       qty: 12,
       icon: "ic_kebab",
-      background: "#EAEEFA",
    },
    {
       name: "salmon",
       qty: 22,
       icon: "ic_salmon",
-      background: "#F9EEF3",
    },
    {
       name: "doughnut",
       qty: 11,
       icon: "ic_donut",
-      background: "#F3F7D9",
    },
    {
       name: "doughnut",
       qty: 22,
       icon: "ic_donut",
-      background: "#F0FEEB",
    },
 ];
 </script>
@@ -74,9 +68,8 @@ const categories = [
                <div
                   :key="item"
                   :class="
-                     'flex items-center flex-col py-[30px] hover:pb-[48px] group rounded-lg transition-all duration-300  bg-[' +
-                     item.background +
-                     ']'
+                     'flex items-center flex-col py-[30px] hover:pb-[48px] group rounded-lg transition-all duration-300  bg-' +
+                     item.name
                   "
                >
                   <div class="inset-0 absolute">

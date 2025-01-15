@@ -26,34 +26,5 @@
    }
 }
 
-#hamburger ~ label span::after,
-#hamburger ~ label span::before {
-   background: #000;
-   transition-delay: 0.2s, 0s;
-   transition-duration: 0.1s;
-   transition-property: margin, transform;
-   content: "";
-   position: absolute;
-   width: 28px;
-   height: 4px;
-}
-#hamburger ~ label span::after {
-   margin-top: 10px;
-}
-#hamburger ~ label span::before {
-   margin-top: -10px;
-}
-#hamburger:checked ~ label span {
-   background-color: transparent;
-}
-#hamburger:checked ~ label span:before,
-#hamburger:checked ~ label span:after {
-   transition-delay: 0s, 0.2s;
-   margin-top: 0;
-}
-#hamburger:checked ~ label span:before {
-   transform: rotate(45deg);
-}
-#hamburger:checked ~ label span:after {
-   transform: rotate(-45deg);
+@layer utilities {
 }

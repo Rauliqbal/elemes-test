@@ -16,42 +16,42 @@ const items = [
    },
    {
       name: "Doner Kebab",
-      category: "pizza",
+      category: "kebab",
       image: "item-3",
       rating: 5,
       background: "#EAEEFA",
    },
    {
       name: "Salmon Roll",
-      category: "Salmon",
+      category: "salmon",
       image: "item-4",
       rating: 4,
       background: "#F9EEF3",
    },
    {
       name: "Cupcake Choco",
-      category: "Cupcake",
+      category: "cupcake",
       image: "item-5",
       rating: 4,
       background: "#F0FEEB",
    },
    {
       name: "Doughnut Milk",
-      category: "Doughnut",
+      category: "doughnut",
       image: "item-6",
       rating: 5,
       background: "#F3F7D9",
    },
    {
       name: "Doughnut Unicorn",
-      category: "Doughnut",
+      category: "doughnut",
       image: "item-7",
       rating: 4,
       background: "#F3F7D9",
    },
    {
       name: "Kathi Kebab",
-      category: "Kebab",
+      category: "kebab",
       image: "item-8",
       rating: 4,
       background: "#EAEEFA",
@@ -71,9 +71,8 @@ const items = [
                v-for="item in items"
                :key="item"
                :class="
-                  'py-[33px] px-5 rounded-[17px] relative shadow-[0px_11px_39px_0px_rgba(0,0,0,0.07)] group bg-[' +
-                  item.background +
-                  ']'
+                  'py-[33px] px-5 rounded-[17px] relative shadow-[0px_11px_39px_0px_rgba(0,0,0,0.07)] group bg-' +
+                  item.category
                "
             >
                <div class="inset-0 absolute">

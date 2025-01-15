@@ -12,7 +12,12 @@ export default {
     extend: {
       colors: {
         primary: '#8BAC3E',
-        secondary: '#757575'
+        secondary: '#757575',
+        pizza: '#E4F2F4',
+        cupcake: '#F0FEEB',
+        kebab: '#EAEEFA',
+        salmon: '#F9EEF3',
+        doughnut: '#F3F7D9'
       },
       fontFamily: {
         rubik: ['Rubik', 'serif']
