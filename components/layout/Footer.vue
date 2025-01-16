@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-   <footer class="container">
+   <footer class="container hidden md:block">
       <div class="bg-[#F9FFF6] rounded-[20px] p-16">
          <div class="flex justify-between">
             <div class="w-[570px]">

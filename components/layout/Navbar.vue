@@ -29,7 +29,9 @@ const links = [
 </script>
 
 <template>
-   <div class="container py-6 absolute inset-x-0 z-50">
+   <div
+      class="container py-6 absolute bg-white md:bg-transparent border-b-[1px] border-[#f8f8f8] md:border-none inset-x-0 z-50"
+   >
       <div class="flex items-center justify-between">
          <NuxtLink to="/">
             <img

@@ -1,15 +1,18 @@
 <script setup></script>
 <template>
-   <section class="py-16">
+   <section class="pb-40 pt-16 md:py-16">
       <div class="container">
-         <h2 class="text-[38px] leading-[50px] font-medium">
+         <h2
+            class="text-2xl leading-[30px] md:text-[38px] md:leading-[50px] font-medium"
+         >
             Browser Our Tending <br />
             <span class="text-primary">Receipt</span>
          </h2>
 
          <div class="grid lg:grid-cols-4 gap-x-5 gap-y-[30px] mt-8">
-            <div
+            <NuxtLink
                v-for="item in products"
+               to="/"
                :key="item"
                :class="
                   'py-[33px] px-5 rounded-[17px] relative shadow-[0px_11px_39px_0px_rgba(0,0,0,0.07)] group bg-' +
@@ -49,10 +52,10 @@
                      :rating-value="item.rating"
                   />
                </div>
-            </div>
+            </NuxtLink>
          </div>
 
-         <div class="text-center mt-[68px]">
+         <div class="text-center mt-[68px] hidden md:block">
             <button class="btn btn--primary btn--rounded">
                <span class="w-[122px] text-white font-medium">ALL Receipt</span>
             </button>

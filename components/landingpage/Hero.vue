@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-   <section class="relative py-16">
+   <section class="relative pt-40 pb-16 md:py-16">
       <div class="inset-0 absolute">
          <div
             class="bg-[url('~/assets/images/background.png')] h-full bg-cover bg-center opacity-[2%]"

@@ -1,9 +1,14 @@
 <template>
    <button
       @click="slideNext"
-      class="swiper-next-btn absolute top-[calc(50%-20px)] right-0 z-2 flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-sm cursor-pointer transition duration-300 ease-in-out transform hover:scale-110"
+      class="py-[9px] px-4 inline-flex items-center btn--primary btn--rounded font-medium"
    >
-      &gt;
+      NEXT
+      <div
+         class="h-[33px] w-[33px] flex items-center justify-center rounded-full bg-white ml-3"
+      >
+         <img src="~/assets/icons/ic_nextarrow.svg" alt="Icon Button" />
+      </div>
    </button>
 </template>
 

@@ -8,5 +8,6 @@ import Footer from "~/components/layout/Footer.vue";
       <LandingpageCategory />
       <LandingpageTrending />
       <LayoutFooter />
+      <LayoutBottomNav />
    </div>
 </template>
