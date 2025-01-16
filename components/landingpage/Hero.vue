@@ -1,8 +1,6 @@
-<script setup>
-import Button from "../ui/Button.vue";
-</script>
+<script setup></script>
 <template>
-   <section class="relative">
+   <section class="relative py-16">
       <div class="inset-0 absolute">
          <div
             class="bg-[url('~/assets/images/background.png')] h-full bg-cover bg-center opacity-[2%]"

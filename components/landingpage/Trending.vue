@@ -1,63 +1,4 @@
-<script setup>
-const items = [
-   {
-      name: "pizza paperoni",
-      category: "pizza",
-      image: "item-1",
-      rating: 4,
-      background: "#E6F3F5",
-   },
-   {
-      name: "Pizza Meat",
-      category: "pizza",
-      image: "item-2",
-      rating: 3,
-      background: "#E6F3F5",
-   },
-   {
-      name: "Doner Kebab",
-      category: "kebab",
-      image: "item-3",
-      rating: 5,
-      background: "#EAEEFA",
-   },
-   {
-      name: "Salmon Roll",
-      category: "salmon",
-      image: "item-4",
-      rating: 4,
-      background: "#F9EEF3",
-   },
-   {
-      name: "Cupcake Choco",
-      category: "cupcake",
-      image: "item-5",
-      rating: 4,
-      background: "#F0FEEB",
-   },
-   {
-      name: "Doughnut Milk",
-      category: "doughnut",
-      image: "item-6",
-      rating: 5,
-      background: "#F3F7D9",
-   },
-   {
-      name: "Doughnut Unicorn",
-      category: "doughnut",
-      image: "item-7",
-      rating: 4,
-      background: "#F3F7D9",
-   },
-   {
-      name: "Kathi Kebab",
-      category: "kebab",
-      image: "item-8",
-      rating: 4,
-      background: "#EAEEFA",
-   },
-];
-</script>
+<script setup></script>
 <template>
    <section class="py-16">
       <div class="container">
@@ -68,7 +9,7 @@ const items = [
 
          <div class="grid lg:grid-cols-4 gap-x-5 gap-y-[30px] mt-8">
             <div
-               v-for="item in items"
+               v-for="item in products"
                :key="item"
                :class="
                   'py-[33px] px-5 rounded-[17px] relative shadow-[0px_11px_39px_0px_rgba(0,0,0,0.07)] group bg-' +
@@ -83,6 +24,7 @@ const items = [
 
                <div class="relative">
                   <img
+                     class="h-[120px] w-[120px] rounded-md"
                      :src="'/images/' + item.image + '.png'"
                      :alt="'Item image ' + item.name"
                   />
