@@ -1,10 +1,20 @@
-# Nuxt Minimal Starter
+# Test Coding Elemes.id
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This website is a front-end developer coding test at Elemes group
+[Live Preview](https://elemes-test-murex.vercel.app/)
 
-## Setup
+![alt](./cover.png)
 
-Make sure to install dependencies:
+## Installation
+
+Pertama, clone project pada repository:
+
+```bash
+# Clone Repo
+git clone https://github.com/Rauliqbal/elemes-test.git
+```
+
+lalu instal dependencies :
 
 ```bash
 # npm
@@ -13,16 +23,13 @@ npm install
 # pnpm
 pnpm install
 
-# yarn
-yarn install
-
 # bun
 bun install
 ```
 
-## Development Server
+## Running Project
 
-Start the development server on `http://localhost:3000`:
+Setelah instal Dependencies, jalankan project dengan masukan perintah :
 
 ```bash
 # npm
@@ -31,45 +38,28 @@ npm run dev
 # pnpm
 pnpm dev
 
-# yarn
-yarn dev
-
 # bun
 bun run dev
 ```
 
+lalu buka pada browser, masukan url `http://localhost:3000`
+
 ## Production
 
-Build the application for production:
+Pastikan project kamu harus berada pada Github
 
-```bash
-# npm
-npm run build
+buka website [vercel](https://vercel.com), lalu login., sesuaikan dengan keinginan.
 
-# pnpm
-pnpm build
+setelah masuk pada halaman dashboard Vercel, klik Tombol **Add New**, yang berada pada pojok kanan atas., lalu pilih **Project**
 
-# yarn
-yarn build
+![alt text](vercel-1.png)
 
-# bun
-bun run build
-```
+jika login menggunakan akun github maka sudah terhubung dengan github repository, jika belum terhubung dengan Github repository, silahkan di hubungkan terlebih dahulu.
 
-Locally preview production build:
+lalu pilih nama project nya, disini saya menamainnya dengen _elemes-test_, lalu klik import
 
-```bash
-# npm
-npm run preview
+![alt text](vercel-2.png)
 
-# pnpm
-pnpm preview
+Setelah itu tunggu sampe proses build selesai.
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+DEVELOPMENT BY [Rauliqbal](https://rauliqbal.my.id)
