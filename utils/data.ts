@@ -56,3 +56,21 @@ export const products = [
       background: "#EAEEFA",
    },
 ];
+
+export const contacts = [
+   {
+      label: "elemesid@gmail.com",
+      icon: "ic_mail.svg",
+      url: "#",
+   },
+   {
+      label: "0888 1111 2222 ",
+      icon: "ic_phone.svg",
+      url: "#",
+   },
+   {
+      label: "elemes.id",
+      icon: "ic_instagram.svg",
+      url: "#",
+   },
+];

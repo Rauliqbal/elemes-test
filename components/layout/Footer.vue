@@ -1,27 +1,9 @@
-<script setup>
-const contacts = [
-   {
-      label: "elemesid@gmail.com",
-      icon: "ic_mail.svg",
-      url: "#",
-   },
-   {
-      label: "0888 1111 2222 ",
-      icon: "ic_phone.svg",
-      url: "#",
-   },
-   {
-      label: "elemes.id",
-      icon: "ic_instagram.svg",
-      url: "#",
-   },
-];
-</script>
+<script setup></script>
 <template>
    <footer class="container">
       <div class="bg-[#F9FFF6] rounded-[20px] p-16">
-         <div class="grid grid-cols-5">
-            <div class="col-span-2">
+         <div class="flex justify-between">
+            <div class="w-[570px]">
                <img src="~/assets/images/nav-logo.png" alt="Logo Elemes" />
                <p class="text-sm text-secondary mt-4">
                   Jl. Prof. DR. Satrio No.7, RT.3/RW.3, Karet Kuningan,
@@ -42,25 +24,76 @@ const contacts = [
                   </div>
                </div>
             </div>
-            <div>
-               <h5 class="text-lg font-medium">Categories</h5>
+            <div class="w-full grid grid-cols-3">
+               <div>
+                  <h5 class="text-lg font-medium">Categories</h5>
 
-               <ul class="flex flex-col gap-[19px] text-sm mt-[33px]">
-                  <li class="text-secondary capitalize">cupcake</li>
-                  <li class="text-secondary capitalize">pizza</li>
-                  <li class="text-secondary capitalize">kebab</li>
-                  <li class="text-secondary capitalize">salmon</li>
-                  <li class="text-secondary capitalize">doughnut</li>
-               </ul>
-            </div>
-            <div>
-               <h5 class="text-lg font-medium">About us</h5>
+                  <ul class="flex flex-col gap-[19px] text-sm mt-[33px]">
+                     <li class="text-secondary hover:text-primary capitalize">
+                        <a href="">cupcake</a>
+                     </li>
+                     <li class="text-secondary hover:text-primary capitalize">
+                        <a href="">pizza</a>
+                     </li>
+                     <li class="text-secondary hover:text-primary capitalize">
+                        <a href=""> kebab </a>
+                     </li>
+                     <li class="text-secondary hover:text-primary capitalize">
+                        <a href="">salmon</a>
+                     </li>
+                     <li class="text-secondary hover:text-primary capitalize">
+                        <a href="">doughnut</a>
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <h5 class="text-lg font-medium">About us</h5>
 
-               <ul class="flex flex-col gap-[19px] text-sm mt-[33px]">
-                  <li class="text-secondary">About Us</li>
-                  <li class="text-secondary">FAQ</li>
-                  <li class="text-secondary">Report Problem</li>
-               </ul>
+                  <ul class="flex flex-col gap-[19px] text-sm mt-[33px]">
+                     <li class="text-secondary hover:text-primary">
+                        <a href="">About Us</a>
+                     </li>
+                     <li class="text-secondary hover:text-primary">
+                        <a href="">FAQ</a>
+                     </li>
+                     <li class="text-secondary hover:text-primary">
+                        <a href="">Report Problem</a>
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <h5 class="text-lg font-medium">About us</h5>
+
+                  <p class="text-sm text-secondary mt-[33px] leading-6">
+                     Get now free 50% discount for alll products on your first
+                     order
+                  </p>
+
+                  <div class="mt-[18px]">
+                     <div class="flex rounded-lg overflow-hidden">
+                        <input
+                           type="text"
+                           class="w-full rounded-l-lg outline-none border-r-0 bg-transparent border-[1px] border-black pl-[15px] py-2 placeholder:text-black placeholder:text-sm"
+                           placeholder="Your email address"
+                        />
+                        <button class="btn bg-primary font-medium text-white">
+                           SEND
+                        </button>
+                     </div>
+                  </div>
+                  <ul class="mt-[19px] flex flex-col gap-[10px]">
+                     <li
+                        v-for="item in contacts.slice(0, 2)"
+                        class="flex items-center gap-1 text-black text-sm"
+                     >
+                        <img
+                           :src="'/icons/' + item.icon"
+                           :alt="'Icon ' + item.label"
+                        />
+                        <span>{{ item.label }}</span>
+                     </li>
+                  </ul>
+               </div>
             </div>
          </div>
       </div>
